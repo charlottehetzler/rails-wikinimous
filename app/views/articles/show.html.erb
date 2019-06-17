@@ -1,8 +1,9 @@
 <h1><%= @article.title %></h1>
-<%= link_to "Edit", edit_article_path %>
-<%= link_to "Delete", article_path(@article), method: :delete, data: {:confirm =>"Are you sure?"}  %>
+<div class="icon">
+<%= link_to "🖌", edit_article_path %>
+<%= link_to "🗑", article_path(@article), method: :delete, data: {:confirm =>"Are you sure?"}  %> </div>
 
 <p> <%= @article.content %></p>
 
-<%= link_to "Back", articles_path %>
+<%= link_to "←", articles_path %>
 
